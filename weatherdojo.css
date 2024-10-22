@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+nav {
+    background-color: #a0c5f8;
+    color: white;
+    margin: 0px auto;
+    padding: 10px 50px;
+    width: fit-content;
+}
+
+header {
+    border-bottom: 2px solid black;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px 10px;
+    width: fit-content;
+
+
+}
+
+main {
+    flex: 1;
+
+}
+
+section {
+
+    flex: 4;
+
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.flex {
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+
+.city a {
+
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.city a:hover {
+    font-weight: bold;
+}
+
+
+.container {
+    width: 600px;
+    margin: 0px auto;
+    position: relative;
+
+}
+
+
+.card {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    margin: 20px auto;
+}
+
+.card-body {
+    padding: 20px;
+    align-items: center;
+}
+
+.img {
+    border-radius: 60%;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+
+}
+
+.day {
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul.weather {
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.red {
+    color: #cf2b27;
+    margin-bottom: 10px;
+}
+
+.blue {
+    color: #2b78e4;
+    margin-bottom: 10px;
+
+}
+
+.weather{
+    margin-bottom: 10px;
+    text-align: center;
+}
+    
+
+    
+
+#cookie {
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    width: inherit;
+
+}
+
+#btn {
+
+    background-color: #a0c5f8;
+    color: black;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px 5px;
+    padding: 3px 15px;
+    width: 90px;
+    align-items: center;
+}
+
+.alert {
+    height: 50px;
+    width: 50px;
+    margin: 10px 5px;
+}
+
+.read {
+    color: #095394;
+}

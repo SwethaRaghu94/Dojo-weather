@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./weatherdojo.css">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <nav>
+        <div class="container d-flex">
+            <h1>DojoWeather</h1>
+            <ul class="d-flex city" onclick="weatherReport()">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav bar ends -->
+    <!-- header starts -->
+    <header>
+        <div class="container d-flex">
+            <h2>San Jose</h2>
+            <div class="flex">
+                <label>show temperature in</label>
+                <select name="temperature" id="tempToggle" onchange="toggleTemperature()">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+    <!-- main starts* -->
+    <main>
+        <div class="container d-flex">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="day">Today</h3>
+                    <img class="img" src="./imgs/some_rain.png" alt="some rain">
+                    <small class="weather">some rain</small>
+                    <ul class="d-flex weather">
+                        <li><a class="temps red" data-unit="C">24°</a></li>
+                        <li><a class="temps blue" data-unit="C">18°</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="day">Tomorrow</h3>
+                    <img class="img" src="./imgs/some_sun.png" alt="some sun">
+                    <small class="weather">some sun</small>
+                    <ul class="d-flex weather">
+                        <li><a class="temps red" data-unit="C">27°</a></li>
+                        <li><a class="temps blue" data-unit="C">19°</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="day">Friday</h3>
+                    <img class="img" src="./imgs/some_clouds.png" alt="some cloud">
+                    <small class="weather">some clouds</small>
+                    <ul class="d-flex weather">
+                        <li><a class="temps red" data-unit="C">21°</a></li>
+                        <li><a class="temps blue" data-unit="C">16°</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="day">Saturday</h3>
+                    <img class="img" src="./imgs/some_sun.png" alt="some sun">
+                    <small class="weather">some sun</small>
+                    <ul class="d-flex weather">
+                        <li><a class="temps red" data-unit="C">26°</a></li>
+                        <li><a class="temps blue" data-unit="C">21°</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--  main ends  -->
+    <!-- section starts -->
+    <section>
+        <div class="container d-flex">
+            <div id="cookie">
+                <div class="flex">
+                    <img class="alert" src="./imgs/cookie.png" alt="image of a cookie">
+                </div>
+                <div>
+                    <h4>Stop! Cookie Time</h4>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+                media features and to analyse our traffic. <a href="#" class="read">Read more...</a></p>
+                </div>
+                <span><button id="btn" onclick="removeCookie()">I Accept</button></span>
+            </div>
+        </div>
+    </section>
+    <!-- section ends -->
+
+
+
+
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
